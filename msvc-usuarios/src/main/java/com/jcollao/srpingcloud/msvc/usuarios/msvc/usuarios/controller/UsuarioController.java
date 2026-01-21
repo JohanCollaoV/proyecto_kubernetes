@@ -53,7 +53,7 @@ public class UsuarioController {
             Usuario usuarioDb = o.get();
             usuarioDb.setNombre(usuario.getNombre());
             usuarioDb.setEmail(usuario.getEmail());
-            usuarioDb.setPassword(usuarioDb.getPassword());
+            usuarioDb.setPassword(usuario.getPassword());
             return  ResponseEntity.status(HttpStatus.CREATED).body(service.guardar(usuarioDb));
         }
         return ResponseEntity.notFound().build();

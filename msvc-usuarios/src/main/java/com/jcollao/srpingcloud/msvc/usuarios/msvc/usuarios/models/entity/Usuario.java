@@ -1,14 +1,13 @@
 package com.jcollao.srpingcloud.msvc.usuarios.msvc.usuarios.models.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import jdk.jfr.Enabled;
-import org.springframework.data.annotation.Id;
+import jakarta.persistence.Id;
+
 
 @Enabled
 @Table(name="usuarios")
+@Entity
 public class Usuario {
 
     @Id
